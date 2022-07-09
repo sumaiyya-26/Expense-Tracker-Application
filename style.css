@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+/*Resetting everything to shift all to top left coner side so that we can allign to centre easily*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*header class and footer class colours*/
+.header, .footer{
+    background-color: rgb(38, 216, 160);/*background*/
+    /*text*/
+    font-family: "Red Hat Display",sans-serif;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+.header{
+    font-size: 1rem;
+    font-weight: bold;
+}
+/*main class*/
+.main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topbar{
+    background-color:rgb(38, 216, 160) ;
+    color: white;
+    padding: 20px;
+    min-width: 300px;/* most of the devices will fit*/
+}
+
+/*paragraph class text*/
+.text{
+    color: white;
+    font-size:0.8rem;
+    margin-bottom: 2px; /*your current balance and balance mein margin bottom ayega*/
+}
+/* paragraph class amount_holder*/
+.amount_holder{
+    font-size:2rem;
+}
+
+
+
+/*form section*/
+.form{
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;  /*everything inside form will now be at 10 px horizontal gap name text-box....*/
+}
+
+
+/* any paragraph inside the form class*/
+.form p{
+    font-size:1.4rem;
+    margin-bottom: 10px;
+}
+
+label,input{
+    display: block;
+}
+input{
+    padding: 10px;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+}
+
+/*button*/
+button{
+    outline:none;
+    border: none;
+    background: none;
+}
+.btn{
+    display: block;
+    width: 100%;
+    background-color: rgb(38, 216, 160);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding:10px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    background-color: greenyellow;
+}
+
+/*transaction list*/
+
+
+/*paragraph of class heading*/
+p.heading{
+    margin:10px 0;
+}
+ul{
+    list-style: none;
+}
+.transaction{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   color:white;
+   margin: 5px 0;
+}
+.income{
+    background-color: rgb(38, 216, 160);
+}
+.expense{
+    background-color: rgb(235, 117, 62);
+}
+.right_side{
+    display: flex;
+    gap:5px;
+}
+.right_side button{
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.right_side button:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+
+#cancel{
+    background-color: rgb(235, 117, 62);
+    display: none;
+}
+#cancel:hover{
+    background-color: red;
+}
+

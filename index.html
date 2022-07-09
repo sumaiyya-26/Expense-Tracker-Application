@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Expense</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="header">
+        Track Your Expense
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="topbar">
+                <p class="text">Your current Balance</p>
+                <p class="amount_holder">
+                    <span id="currency">$</span>
+                    <span id="balance">600</span>
+                </p>
+            </div>
+
+
+
+
+
+            <div class="form">
+
+                <p>Add Transaction</p>
+
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="e.g. My Salary">
+                </div>
+
+
+                <div class="form-control">
+                    <label for="name">Type</label>
+                    <div class="radio">
+                        <input type="radio" name="type" id="income" checked>
+                        <label for="radio">Income</label> 
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="type" id="expense">
+                        <label for="radio">Expense</label> 
+                    </div>
+                </div>
+
+
+
+                <div class="form-control">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" placeholde="e.g.1000">
+                </div>
+
+                <button class="btn" id="save">Save Transaction</button>
+                <button class="btn" id="cancel">Cancel Edit</button>
+
+            </div>
+
+
+            <p clas="heading">Transaction List : </p>
+            <ul id="list_of_transactions">
+                <li class="transaction income">
+                    <p>Income 1</p>
+                    <div class="right_side">
+                        <p>$300</p>
+                        <button><i class="fas fa-edit"></i></button>
+                        <button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    </div>
+                </li>
+                <li class="transaction expense">
+                    <p>Expense 1</p>
+                    <div class="right_side">
+                        <p>$100</p>
+                        <button><i class="fas fa-edit"></i></button>
+                        <button><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer">
+        <span>Connect</span>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-github"></i></a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
